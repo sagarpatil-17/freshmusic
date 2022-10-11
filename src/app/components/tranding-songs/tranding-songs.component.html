@@ -1,0 +1,12 @@
+<div class="d-flex mt-5 mb-2 ms-4">
+    <h5 class="ms-4 fs-4 fw-bolder res" style="font-family: 'Josefin Sans', sans-serif;">Tranding Songs</h5>
+    <h5 class="ms-auto me-4 fs-6 fw-normal see-all" style="font-family: 'Josefin Sans', sans-serif;" routerLink="tranding-songs-list" (click)="gp()" >See All</h5>
+</div>
+
+<div class="container-fluid d-flex row-cols-1 row-cols-md-5 res-l">
+    <div class="card ms-4 mb-4 flex-wrap" style="width: 15rem;" *ngFor="let a of trand">
+        <img [src]="a.image" class="card-img-top rounded-4" [alt]="a.movieName" width="250px" height="300px"
+            [title]="a.movieName" (click)="onRou(a.id)">
+        <p class="card-text fs-6 fw-normal mt-2" style="font-family: 'Merriweather', serif;">{{a.song1.songName}}</p>
+    </div>
+</div>

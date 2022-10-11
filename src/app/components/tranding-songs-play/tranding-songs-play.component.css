@@ -1,0 +1,14 @@
+img{
+    width: 270px;
+    max-height: 300px;
+}
+
+@media(max-width:440px){
+    .res{
+        display: flex;
+        margin-bottom: -30px !important;
+    }
+    img{
+        margin: auto;
+    }
+}

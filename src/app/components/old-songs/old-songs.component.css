@@ -1,0 +1,23 @@
+.card{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.container-fluid{
+    overflow-x: scroll;
+}
+
+.see-all{
+    cursor: pointer;
+}
+
+@media(max-width:440px){
+    .res{
+        margin-left: 8px !important;
+    }
+
+    .res-l{
+        margin-left: -10px !important;
+    }
+}

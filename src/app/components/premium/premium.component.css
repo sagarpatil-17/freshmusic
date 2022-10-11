@@ -1,0 +1,5 @@
+@media(max-width:440px){
+    .w-50{
+       width: 85% !important;
+    }
+}

@@ -1,0 +1,43 @@
+<div class="premium d-flex" style="background-color: #f1f1f1; height:88vh">
+    <form [formGroup]="gopremium" class="m-auto mt-5 w-50 needs-validation" style="font-family: 'Josefin Sans', sans-serif;">
+        <h3 class="text-center fs-3 fw-semibold">Get Premium</h3>
+        <div class="d-flex mb-4">
+            <div class="d-flex w-50 border border-dark me-3 p-2 rounded-2">
+                <input class="form-check-input me-2" type="radio" name="flexRadioDefault" formControlName="flexRadioDefault" value="49" id="flexRadioDefault1">
+                <div *ngFor="let a of pre">
+                    <label class="form-check-label" for="flexRadioDefault1">{{a.membership1}}</label>
+                    <div class="right ms-auto">{{ a.price1 | currency:'INR' }}</div>
+                </div>
+            </div>
+            <div class="d-flex w-50 border border-dark ms-3 p-2 rounded-2">
+                <input class="form-check-input me-2" type="radio" name="flexRadioDefault"  formControlName="flexRadioDefault" value="149" id="flexRadioDefault2">
+                <div *ngFor="let a of pre">
+                    <label class="form-check-label" for="flexRadioDefault2">{{a.membership2}}</label>
+                    <div class="right ms-auto">{{ a.price2 | currency:'INR' }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex my-4">
+            <div class="d-flex w-50 border border-dark me-3 p-2 rounded-2">
+                <input class="form-check-input me-2" type="radio" name="flexRadioDefault" formControlName="flexRadioDefault" value="249" id="flexRadioDefault3">
+                <div *ngFor="let a of pre">
+                    <label class="form-check-label" for="flexRadioDefault3">{{a.membership3}}</label>
+                    <div class="right ms-auto">{{ a.price3 | currency:'INR' }}</div>
+                </div>
+            </div>
+            <div class="d-flex w-50 border border-dark ms-3 p-2 rounded-2">
+                <input class="form-check-input me-2" type="radio" name="flexRadioDefault" formControlName="flexRadioDefault" value="449" id="flexRadioDefault4">
+                <div class="" *ngFor="let a of pre">
+                    <label class="form-check-label" for="flexRadioDefault4">{{a.membership4}}</label>
+                    <div class="right">{{ a.price4 | currency:'INR' }}</div>   
+                </div>
+            </div>
+        </div>
+        <div class="d-flex">
+            <button class="btn w-50 m-auto" style="background-color: crimson; color:white" routerLink="/signup" [disabled]="gopremium.invalid">Buy
+                Now</button>
+        </div>
+
+    </form>
+
+</div>

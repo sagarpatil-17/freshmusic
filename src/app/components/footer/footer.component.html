@@ -1,0 +1,58 @@
+<div class="bg-light mt-4 pt-4 footer">
+    <div class="text-center d-flex flex-column mx-auto p-2 " style="width: 80%;">
+        <div class="card-body" style="font-family: 'Merriweather', serif;">
+            <h3 class="fs-4 fw-semibold">About Fresh Music</h3>
+            <p class=" fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur beatae adipisci quis,
+                explicabo corrupti amet architecto tenetur ratione mollitia id error assumenda veritatis quam
+                repellendus magnam sequi, nihil blanditiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Fugiat culpa necessitatibus tenetur consectetur repellendus eum, quod sit reiciendis at, alias tempore
+                ad, animi asperiores aperiam eos? Necessitatibus laborum vitae tempore? Lorem ipsum dolor sit amet
+                consectetur.</p>
+        </div>
+    </div>
+    <hr class="mx-auto" width="90%">
+
+    <div class="d-flex p-2 " style="width: 100%;">
+        <div class="mx-auto">
+            <i class="fa-brands fa-facebook fs-3 px-3" style="cursor: pointer;"></i>
+            <i class="fa-brands fa-twitter fs-3 px-3" style="cursor: pointer;"></i>
+            <i class="fa-brands fa-telegram fs-3 px-3" style="cursor: pointer;"></i>
+        </div>
+    </div>
+    <hr class="mx-auto" width="90%">
+
+    <div class="d-flex m-auto" style="width: 80%; font-family: 'Merriweather', serif;" aria-label="breadcrumb">
+        <ol class="breadcrumb m-auto">
+            <li class="breadcrumb-item ps-3"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active ps-3" aria-current="page">Terms of Use</li>
+            <li class="breadcrumb-item active ps-3" aria-current="page">Privacy Policy</li>
+            <li class="breadcrumb-item active ps-3" aria-current="page">Partners</li>
+            <li class="breadcrumb-item active ps-3" aria-current="page">FAQ</li>
+        </ol>
+    </div>
+    <hr class="mx-auto" width="90%">
+
+    <div class="d-flex justify-content-evenly mx-auto p-2 " style="width: 100%; font-family: 'Merriweather', serif;">
+        <div class="hidec">
+            <h4>Bollywood Hindi Songs</h4>
+            <p *ngFor="let f of footer">{{f.movieName}}</p>
+        </div>
+        <div class="hidec">
+            <h4>Trending Songs</h4>
+            <p *ngFor="let f of footer">{{f.song3.songName}}</p>
+        </div>
+        <div class="res">
+            <h4>New Releases</h4>
+            <p *ngFor="let f of footer">{{f.song2.songName}}</p>
+        </div>
+        <div>
+            <h4>Old Songs</h4>
+            <p *ngFor="let f of footer">{{f.song1.songName}}</p>
+        </div>
+    </div>
+    <hr class="mx-auto" width="90%">
+
+    <div class="d-flex justify-content-evenly mx-auto p-2" style="width: 100%; font-family: 'Merriweather', serif;">
+        <p> &#169; Fresh Music 2022, All Rights Reserved</p>
+    </div>
+</div>

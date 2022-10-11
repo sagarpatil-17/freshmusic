@@ -1,0 +1,67 @@
+.fresh {
+    color: crimson;
+}
+
+.search-container {
+    width: 610px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+input#search-bar {
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    border-radius: 15px;
+}
+
+.search-icon {
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -35px;
+    right: -40px;
+    color: black;
+}
+
+.freshmuc{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+app-user {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    z-index: 99;
+}
+
+@media (max-width:440px) {
+    .search-container{
+        display: none;
+    }
+
+    .hidec{
+        display: none;
+    }
+    .freshmuc{
+        margin-right: auto;
+    }
+    mat-sidenav{
+        width: 120px !important;
+    }
+    .mx-2{
+        margin-left: -8px !important;
+    }
+    app-user {
+        right: 20px;
+    }
+
+
+}

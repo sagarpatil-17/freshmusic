@@ -1,0 +1,9 @@
+img{
+    width: 270px;
+    max-height: 300px;
+}
+/* @media (max-width:440px) {
+    .res{
+        margin-top: 3rem !important;
+    }
+} */

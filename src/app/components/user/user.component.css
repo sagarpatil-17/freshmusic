@@ -1,0 +1,8 @@
+@media (max-width:440px) {
+    .card{
+        width:13rem !important;
+    }
+    .fs-6{
+        font-size: 12px !important;
+    }
+}

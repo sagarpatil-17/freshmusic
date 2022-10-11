@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signIn-form {
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+}
+
+.signIn {
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.signIn h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.signIn form {
+    font-size: 20px;
+}
+
+.signIn form .form-group {
+    margin-bottom: 12px;
+}
+
+.signIn form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+@media(max-width:440px) {
+    .signIn-form {
+        height: 65vh !important;
+    }
+}
+

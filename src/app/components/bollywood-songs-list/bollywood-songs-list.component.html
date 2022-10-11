@@ -1,0 +1,52 @@
+<div class="container-fluid" style="max-width: 888px; font-family: 'Merriweather', serif;" *ngFor="let b of bolly">
+    <div class="row g-0" *ngIf="b.id == bollySongs">
+        <div class="col-md-4 mt-5 mb-3 res">
+            <img [src]="b.image" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8 mt-5 res-d">
+            <div class="card-body" style="font-family: 'Josefin Sans', sans-serif;">
+                <h5 class="fs-4 ">{{b.movieName}} (2022) Mp3 Download</h5>
+                <!-- <hr> -->
+                <p class="mt-4 fs-5">Category - <span style="color: crimson;">Latest Bollywood Hindi Mp3 Songs 2022</span>
+                </p>
+                <!-- <hr> -->
+                <!-- <p class="mt-4">share this page! - </p> -->
+                <div class="mt-4 fs-6">
+                    <ol class="d-flex text-muted ps-0">
+                        <li class="me-1"><a routerLink="">Home</a> > </li>
+                        <li class="me-1">Bollywood Songs > </li>
+                        <li class="" style="color: crimson;">{{b.movieName}}</li>
+                    </ol>
+                </div>
+                <!-- <hr> -->
+
+            </div>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Song Name</th>
+                    <th scope="col">Artists</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr (click)="onRou(b.id)">
+                    <th scope="row">1</th>
+                    <td>{{b.song1.songName}}</td>
+                    <td>{{b.song1.Artists}}</td>
+                </tr>
+                <tr (click)="onRou2(b.id)">
+                    <th scope="row">2</th>
+                    <td>{{b.song2.songName}}</td>
+                    <td>{{b.song2.Artists}}</td>
+                </tr>
+                <tr (click)="onRou3(b.id)">
+                    <th scope="row">3</th>
+                    <td>{{b.song3.songName}}</td>
+                    <td>{{b.song3.Artists}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

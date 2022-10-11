@@ -1,0 +1,16 @@
+<div class="container" style="max-width: 840px;" *ngFor="let c of bolly">
+    <div class="row g-0" *ngIf="c.id == bollySongs">
+      <div class="col-md-4 mt-5">
+        <img [src]="c.image" class="rounded-start" alt="...">
+      </div>
+      <div class="col-md-8 mt-5 ">
+        <div class="ms-5">
+          <h5 class="mt-4 fs-5 fw-semibold" style="font-family: 'Josefin Sans', sans-serif;">{{c.song1.songName}} Song | {{c.song1.Artists}} | {{c.movieName}}</h5>
+          <h5 class="mt-4 fs-4 fw-bolder" style="font-family: 'Josefin Sans', sans-serif;">{{c.song1.songName}}</h5>
+          <h5 class="mt-4 fs-6 fw-normal" style="font-family: 'Josefin Sans', sans-serif;"><span style="color: crimson;">{{c.movieName}}</span> - 2022</h5>
+          <p class="mt-4 fw-normal" style="font-family: 'Josefin Sans', sans-serif;"><small class=" fs-6">{{c.song1.Artists}}</small></p>
+          <audio class="mt-4" [src]="c.song1.audio1" controls></audio>
+        </div>
+      </div>
+    </div>
+  </div>

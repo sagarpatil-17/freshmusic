@@ -1,0 +1,33 @@
+<div class="signIn-form">
+    <div class="signIn">
+        <h1 class="text-center">Sign In</h1>
+        <form [formGroup]="signIn" class="needs-validation">
+            <div class="form-group">
+                <label class="form-lable" for="">Email</label>
+                <input class="form-control shadow-none" type="email" id="email" formControlName="email">
+                <div class="text-danger fs-6" *ngIf="signIn.get('email').invalid && signIn.get('email').touched">
+                    Please enter valid email
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-lable" for="">Password</label>
+                <input class="form-control shadow-none" type="password" id="password" required
+                    formControlName="password">
+                <div class="text-danger fs-6" *ngIf="signIn.get('password').invalid && signIn.get('password').touched">
+                    Please enter your password
+                </div>
+            </div>
+            <!-- <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" id="check">
+                <label class="form-check-lable" for="check">Remember me</label>
+            </div> -->
+            <input class="btn w-100 text-light bg-secondary" type="submit" value="Sign In" (click)="loginBtn(signIn.value)"
+                [disabled]="signIn.invalid">
+            <div class="d-flex justify-content-center mt-2 fs-6"><span class="me-1">Not register?</span><a
+                    class="primary" (click)="goToRegister()" style="cursor: pointer;">Create an account</a>
+            </div>
+        </form>
+    </div>
+
+</div>

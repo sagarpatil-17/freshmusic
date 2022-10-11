@@ -1,0 +1,33 @@
+<div class="container-fluid" style="max-width: 888px; font-family: 'Josefin Sans', sans-serif;">
+    <div class="row g-0">
+        <div class="col-md-4 mt-5 res-d">
+            <img src="https://github.com/sagarpatil-17/music-app/blob/main/img/tranding%20img.jpg?raw=true" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8 mt-5 res">
+            <div class="card-body">
+                <h4 class="fs-4 fw-semibold">New Releases</h4>
+                <p class="card-text mt-3 fs-6">New Songs 2022</p>
+                <p class="card-text mt-3 fs-6">Created by<span style="color: crimson;"> Fresh Music</span></p>
+                <p class="card-text mt-3 fs-6">10 Tracks</p>
+            </div>
+        </div>
+        <table class="table table-hover mt-3">
+            <thead class="fs-6 fw-semibold">
+                <tr>
+                    <!-- <th scope="col"></th> -->
+                    <th scope="col">Track</th>
+                    <th scope="col">Artists</th>
+                    <th scope="col">Songs</th>
+                </tr>
+            </thead>
+            <tbody class="fw-normal" *ngFor="let f of newRel">
+                <tr>
+                    <!-- <th scope="row"><mat-icon>audiotrack</mat-icon></th> -->
+                    <td>{{f.song2.songName}}</td>
+                    <td>{{f.song2.Artists}}</td> 
+                    <td><audio [src]="f.song2.audio2" controls></audio></td> 
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

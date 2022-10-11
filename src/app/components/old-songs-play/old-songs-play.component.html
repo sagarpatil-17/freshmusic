@@ -1,0 +1,19 @@
+<div class="container" style="max-width: 840px;" *ngFor="let o of oldsongs">
+  <div class="row g-0" *ngIf="o.id == oldPlay">
+    <div class="col-md-4 mt-5 res">
+      <img [src]="o.image" class="rounded-start" alt="...">
+    </div>
+    <div class="col-md-8 mt-5">
+      <div class="ms-5">
+        <h5 class="mt-4 fs-5 fw-semibold" style="font-family: 'Josefin Sans', sans-serif;">{{o.song3.songName}} Song |
+          {{o.song3.Artists}} | {{o.movieName}}</h5>
+        <h5 class="mt-4 fs-4 fw-bolder" style="font-family: 'Josefin Sans', sans-serif;">{{o.song3.songName}}</h5>
+        <h5 class="mt-4 fs-6 fw-normal" style="font-family: 'Josefin Sans', sans-serif;"><span
+            style="color: crimson;">{{o.movieName}}</span> - 2022</h5>
+        <p class="mt-4 fw-normal" style="font-family: 'Josefin Sans', sans-serif;"><small
+            class=" fs-6">{{o.song3.Artists}}</small></p>
+        <audio class="mt-4" [src]="o.song3.audio3" controls></audio>
+      </div>
+    </div>
+  </div>
+</div>

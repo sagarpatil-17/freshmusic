@@ -1,0 +1,15 @@
+<div class="d-flex mt-5 mb-2 ms-4">
+    <h5 class="ms-4 fs-4 fw-bolder res" style="font-family: 'Josefin Sans', sans-serif;">Latest Bollywood Hindi Mp3
+        Songs 2022</h5>
+    <!-- <h5 class="ms-auto me-4 fs-6 fw-normal">See All</h5> -->
+</div>
+
+<div class="container-fluid d-flex row-cols-1 row-cols-md-5 res-l">
+    <div class="card ms-4 mb-4 flex-wrap" style="width: 15rem; height: 100%;" *ngFor="let a of bolly">
+        <div (click)="onRou(a.id)">
+            <img [src]="a.image" class="card-img-top rounded-4" [alt]="a.movieName" width="250px" height="300px"
+                [title]="a.movieName">
+            <p class="card-text fs-6 fw-normal mt-2" style="font-family: 'Merriweather', serif;">{{a.movieName}}</p>
+        </div>
+    </div>
+</div>

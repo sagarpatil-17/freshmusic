@@ -1,0 +1,16 @@
+p{
+    cursor: pointer;
+}
+.footer{
+    background-color: #f1f1f1 !important
+}
+
+@media(max-width:440px){
+    .hidec{
+        display: none;
+    }
+
+    .res{
+        margin-left: 25px;
+    }
+}

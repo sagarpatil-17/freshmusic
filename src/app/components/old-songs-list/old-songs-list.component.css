@@ -1,0 +1,23 @@
+mat-icon{
+    font-size: 18px;
+}
+img{
+    max-height: 200px;
+    width: 260px;
+}
+
+@media(max-width:440px){
+    audio{
+        width: 170px;
+    }
+
+    .res{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .res-d{
+        margin-bottom: -15px !important;
+    }
+
+}

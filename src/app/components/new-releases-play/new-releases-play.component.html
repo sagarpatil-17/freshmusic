@@ -1,0 +1,19 @@
+<div class="container" style="max-width: 840px;" *ngFor="let d of newRel">
+  <div class="row g-0" *ngIf="d.id == newPlay">
+    <div class="col-md-4 mt-5 res">
+      <img [src]="d.image" class="rounded-start" alt="...">
+    </div>
+    <div class="col-md-8 mt-5">
+      <div class="ms-5">
+        <h5 class="mt-4 fs-5 fw-semibold" style="font-family: 'Josefin Sans', sans-serif;">{{d.song2.songName}} Song |
+          {{d.song2.Artists}} | {{d.movieName}}</h5>
+        <h5 class="mt-4 fs-4 fw-bolder" style="font-family: 'Josefin Sans', sans-serif;">{{d.song2.songName}}</h5>
+        <h5 class="mt-4 fs-6 fw-normal" style="font-family: 'Josefin Sans', sans-serif;"><span
+            style="color: crimson;">{{d.movieName}}</span> - 2022</h5>
+        <p class="mt-4 fw-normal" style="font-family: 'Josefin Sans', sans-serif;"><small
+            class=" fs-6">{{d.song2.Artists}}</small></p>
+        <audio class="mt-4" [src]="d.song2.audio2" controls></audio>
+      </div>
+    </div>
+  </div>
+</div>
